@@ -1,0 +1,20 @@
+{
+  "templateKey": "element",
+  "information": {
+    "about": "A nice about text",
+    "label_for_name_field": "CEO",
+    "label_for_opening_hours": "Öffnungszeiten",
+    "opening_hours": [
+      {
+        "opening_hours_info": "Mo-Fr 08:00 - 12:00"
+      }
+    ],
+    "name": "Hansi Hölzl",
+    "label_for_general_information": "Info",
+    "address": "Holzweg 6",
+    "general_information": "General Information with image \n\n![Coffee](./home-jumbotron.jpg)",
+    "phone_number": "+4366212345",
+    "fax": "+43662654321"
+  },
+  "title": "Hansis Test"
+}

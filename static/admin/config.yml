@@ -1,0 +1,70 @@
+backend:
+  name: git-gateway
+
+local_backend: true
+
+media_folder: static/assets
+public_folder: /assets
+collections:
+  - name: elements
+    label: Element
+    folder: content/elements
+    extension: json
+    format: json
+    media_folder: ''
+    public_folder: ''
+    create: true
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "element",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Information",
+          name: information,
+          widget: object,
+          fields:
+            [
+              { label: Name, name: name, widget: string },
+              { label: "Phone Number", name: phone_number, widget: string },
+              { label: "Address", name: address, widget: string },
+              { label: "Fax", name: fax, widget: string },
+              {
+                label: "Label for name",
+                name: label_for_name_field,
+                widget: string,
+              },
+              {
+                label: "Label for general information",
+                name: label_for_general_information,
+                widget: string,
+              },
+              {
+                label: "General Information",
+                name: general_information,
+                widget: markdown,
+              },
+              {
+                label: "Label for opening hours",
+                name: label_for_opening_hours,
+                widget: string,
+              },
+              {
+                label: "Opening Hours",
+                name: opening_hours,
+                widget: list,
+                fields:
+                  [
+                    {
+                      label: "Opening Hours Info",
+                      name: opening_hours_info,
+                      widget: string,
+                    },
+                  ],
+              },
+              { label: "About", name: about, widget: markdown },
+            ],
+        }
