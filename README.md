@@ -7,6 +7,8 @@ a markdown document. This results in the page http://localhost:8000/elements/han
 
 This would be fixed with the PR https://github.com/gatsbyjs/gatsby/pull/28093.
 
+This is an example repo for https://github.com/gatsbyjs/gatsby/issues/28094.
+
 ## to replicate
 
 1. `yarn install`
