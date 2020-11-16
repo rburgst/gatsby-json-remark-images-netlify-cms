@@ -1,3 +1,19 @@
+# Gatsby sample for json with netlify cms
+
+This sample is supposed to illustrate how to use netlify cms editing json documents containing markdown conent together with gatsby.
+
+Currently `gatsby-remark-images` does not support resolving images that are not directly within
+a markdown document. This results in the page http://localhost:8000/elements/hansis_test having a broken image while the equivalent page http://localhost:8000/pages/test is showing the properly resolved image.
+
+This would be fixed with the PR https://github.com/gatsbyjs/gatsby/pull/28093.
+
+## to replicate
+
+1. `yarn install`
+2. `yarn develop`
+3. go to http://localhost:8000/elements/hansis_test and check if the image is shown properly
+4. compare this with http://localhost:8000/pages/test where the image is properly resolved
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
